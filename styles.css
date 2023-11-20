@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: auto;
+    height: 90px;
+}
+
+.banner{
+    width: inherit;
+    margin-bottom: 35px;
+    height: 700px;
+    background-attachment: fixed;
+    margin-bottom: 200px;
+}
+
+#banner {
+   background-image: url(images/The-Batman-Opening.avif);
+   display: flex;
+   align-items: center;
+   background-size: cover;
+   background-position: 60% 50%;
+   min-height: 100vh;
+   background-attachment: fixed;
+   z-index: -1;
+}
+
+#trailer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 70%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    max-width: 100%;
+    height: max-content;
+    margin-top: 25px;
+}
+
+.film{
+    margin-top: 25px;
+}
+
+.contenu{
+    display: inline-flex;
+}
+
+.note{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.contenu img{
+    height: 268px;
+    width: 198px;
+}
+
+.filmdescri{
+    margin-left: 25px;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.actor-cards-container h1{
+    margin: 100px;
+    color: #fff;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 5px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('images/robert.webp');
+}
+
+.banner-2 {
+    background-image: url('images/zoe.webp');
+}
+
+.banner-3 {
+    background-image: url('images/paul.webp');
+}
+
+.banner-4 {
+    background-image: url('images/jeffrey.webp');
+}
+
+.banner-5 {
+    background-image: url('images/john.webp');
+}
+
+.banner-6 {
+    background-image: url('images/colin.webp');
+}
+
+.banner-7 {
+    background-image: url('images/jayme.webp');
+}
+
+.banner-8 {
+    background-image: url('images/andy.webp');
+}
+
+.banner-9 {
+    background-image: url('images/barry.webp');
+}
+
+
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}

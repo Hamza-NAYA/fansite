@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles-avis.css" />
+    <link rel="icon" href="images/thebatmanlogo.jpg">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/thebatmanlogo.jpg" />
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./avis.html">
+                    <li>Contact</li>
+                </a>
+                <a href="./photos.html">
+                    <li>Photos</li>
+                </a>
+                <a href="./artwork.html">
+                    <li>Artwork</li>
+                </a>
+                <a href="./evenement à venir.html">
+                    <li>Evenement à venir</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <h3>
+        Donne moi ton avis sur le film
+    </h3>
+
+    <div class="contact">
+        <form name="form" action="action_page.php">
+            <label for="fname"></label>
+            <input type="text" id="fname" name="firstname" placeholder="Ton nom..." />
+
+            <label for="lname"></label>
+            <input type="text" id="lname" name="lastname" placeholder="Ton prenom..." />
+
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Ton avis..." style="height: 200px;">
+            </textarea>
+
+            <input class="submit" type="submit" value="Submit" />
+
+        </form>
+    </div>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="images/thebatmanlogo.jpg" />
+    </footer>
+</body>
+</html>
